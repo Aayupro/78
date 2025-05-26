@@ -1,0 +1,93 @@
+.contact-section {
+  background-color: var(--gray-100);
+}
+
+.dark .contact-section {
+  background-color: var(--gray-800);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .contact-form {
+  background: var(--gray-700);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--gray-800);
+}
+
+.dark .form-group label {
+  color: var(--gray-200);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.dark .form-group input,
+.dark .form-group textarea {
+  background: var(--gray-800);
+  border-color: var(--gray-600);
+  color: var(--gray-200);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.dark .form-group input:focus,
+.dark .form-group textarea:focus {
+  border-color: var(--secondary);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.dark .submit-btn {
+  background: var(--secondary);
+}
+
+.submit-btn:hover {
+  background: #4338CA;
+}
+
+.dark .submit-btn:hover {
+  background: #0D9488;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+}

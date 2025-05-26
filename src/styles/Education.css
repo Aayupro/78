@@ -1,0 +1,163 @@
+.education-section {
+    background-color: var(--gray-100);
+  }
+  
+  .dark .education-section {
+    background-color: var(--gray-800);
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--primary);
+    transform: translateX(-50%);
+  }
+  
+  .dark .timeline::before {
+    background: var(--secondary);
+  }
+  
+  .timeline-item {
+    padding: 1rem 0;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--primary);
+    z-index: 1;
+  }
+  
+  .dark .timeline-dot {
+    background: var(--secondary);
+  }
+  
+  .timeline-item.left .timeline-dot {
+    right: -0.5rem;
+  }
+  
+  .timeline-item.right .timeline-dot {
+    left: -0.5rem;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .dark .timeline-content {
+    background: var(--gray-700);
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .dark .timeline-icon {
+    background: var(--secondary);
+  }
+  
+  .timeline-item.left .timeline-icon {
+    right: -1.5rem;
+  }
+  
+  .timeline-item.right .timeline-icon {
+    left: -1.5rem;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-company {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dark .timeline-company {
+    color: var(--secondary);
+  }
+  
+  .timeline-duration {
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dark .timeline-duration {
+    color: var(--gray-400);
+  }
+  
+  .timeline-description {
+    color: var(--gray-700);
+    line-height: 1.6;
+  }
+  
+  .dark .timeline-description {
+    color: var(--gray-300);
+  }
+  
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 2rem;
+    }
+    
+    .timeline-item {
+      width: 100%;
+      padding-left: 4rem;
+      padding-right: 0;
+    }
+    
+    .timeline-item.left,
+    .timeline-item.right {
+      left: 0;
+    }
+    
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+      left: 1.5rem;
+    }
+    
+    .timeline-item.left .timeline-icon,
+    .timeline-item.right .timeline-icon {
+      left: 0.5rem;
+    }
+  }
